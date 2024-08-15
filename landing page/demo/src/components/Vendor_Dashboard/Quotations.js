@@ -15,7 +15,7 @@ const QuotationsPage = () => {
                     throw new Error('No token found, please log in again.');
                 }
 
-                const response = await axios.get('http://13.60.185.52:8080/vendor/getquotes', {
+                const response = await axios.get('https://13.60.185.52:8080/vendor/getquotes', {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -59,7 +59,7 @@ const QuotationsPage = () => {
             //      return; // Exit if the user cancels the deletion
             //  }
 
-            await axios.get(`http://13.60.185.52:8080/vendor/deletequote/${Number(quotationId)}`, {
+            await axios.get(`https://13.60.185.52:8080/vendor/deletequote/${Number(quotationId)}`, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },

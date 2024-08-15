@@ -42,7 +42,7 @@ function VendorRegistrationForm() {
     } else {
       try {
         // Handle form submission (e.g., send data to server)
-        const response = await axios.post('http://13.60.185.52:8080/vsubmit', {
+        const response = await axios.post('https://13.60.185.52:8080/vsubmit', {
           fName,
           lName,
           mobile,

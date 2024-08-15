@@ -20,7 +20,7 @@ const Quotations = () => {
                     throw new Error('No token found, please log in again.');
                 }
 
-                const response = await axios.get('http://13.60.185.52:8080/customer/getquotes', {
+                const response = await axios.get('https://13.60.185.52:8080/customer/getquotes', {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
