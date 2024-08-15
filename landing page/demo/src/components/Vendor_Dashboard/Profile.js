@@ -14,7 +14,7 @@ const Profile = () => {
                     throw new Error('No token found, please log in again.');
                 }
 
-                const response = await axios.get('http://localhost:8282/vendor/getVendor', {
+                const response = await axios.get('http://13.60.185.52:8080/vendor/getVendor', {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }

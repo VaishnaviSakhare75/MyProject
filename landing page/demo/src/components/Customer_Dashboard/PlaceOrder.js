@@ -32,7 +32,7 @@ const PlaceOrder = () => {
                 return;
             }
 
-            const response = await axios.get(`http://localhost:8282/customer/placeorder/${Number(quotation.qId)}`,  {
+            const response = await axios.get(`http://13.60.185.52:8080/customer/placeorder/${Number(quotation.qId)}`,  {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },

@@ -36,7 +36,7 @@ function Loginform({ setUserType }) {
     } else {
       try {
         // Send login request to the backend
-        const response = await axios.post('http://localhost:8282/login', {
+        const response = await axios.post('http://13.60.185.52:8080/login', {
           email,
           password,
         }, {

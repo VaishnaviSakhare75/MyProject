@@ -42,7 +42,7 @@ const RequestForm = () => {
             setErrors(errors);
         } else {
             try {
-                const response = await axios.post('http://localhost:8282/customer/submitrequest', {
+                const response = await axios.post('http://13.60.185.52:8080/customer/submitrequest', {
                     propertyType: formData.propertyType,
                     address: formData.address,
                     electricityBill: parseFloat(formData.electricityBill), // Ensure this is a number

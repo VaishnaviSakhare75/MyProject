@@ -16,7 +16,7 @@ const Orders = () => {
                     throw new Error('No token found, please log in again.');
                 }
 
-                const response = await axios.get('http://localhost:8282/vendor/getorders', {
+                const response = await axios.get('http://13.60.185.52:8080/vendor/getorders', {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
@@ -41,7 +41,7 @@ const Orders = () => {
                 }
     
                 // Send request to update order status
-                await axios.get(`http://localhost:8282/vendor/finishorder/${Number(orderId)}`, 
+                await axios.get(`http://13.60.185.52:8080/vendor/finishorder/${Number(orderId)}`, 
                 
                  {
                     headers: {

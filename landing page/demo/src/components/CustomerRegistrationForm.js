@@ -48,7 +48,7 @@ function CustomerRegistrationForm() {
       setErrors(errors);
     } else {
       try {
-        const response = await axios.post('http://localhost:8282/csubmit', {
+        const response = await axios.post('http://13.60.185.52:8080/csubmit', {
           firstName,
           lastName,
           mobile,

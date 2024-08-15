@@ -40,7 +40,7 @@ const SendQuoteForm = () => {
 
             try {
                 const token = localStorage.getItem('token');
-                const response = await axios.post(`http://localhost:8282/vendor/submitquote/${Number(requestId)}`, {
+                const response = await axios.post(`http://13.60.185.52:8080/vendor/submitquote/${Number(requestId)}`, {
                     price: formData.price,
                     deliverydate: formData.deliveryDate
                 }, {
